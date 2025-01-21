@@ -3,7 +3,7 @@
 $hostname="localhost";
 $username="root";
 $password="";
-$database="esp_finger";
+$database="your database name"; // if you have followed the readme file your database name will be "Finger_Attendance"
 
 $conn=mysqli_connect($hostname,$username,$password,$database);
 
@@ -18,7 +18,7 @@ if(isset($_POST["Name"]) && isset($_POST["Finger_ID"])){
     $finID=$_POST["Finger_ID"];
     //$t=25;
     //$h=70;
-    $sql= "INSERT INTO user_log (Name,Finger_ID) VALUES('.$name.',".$finID.")";
+    $sql= "INSERT INTO Attendance (Name,Finger_ID) VALUES('.$name.',".$finID.")";
 
     if (mysqli_query($conn, $sql)){
     echo "New Record Created Successfully";
