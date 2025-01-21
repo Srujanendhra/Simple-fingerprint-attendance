@@ -3,7 +3,7 @@
 $hostname="localhost";
 $username="root";
 $password="";
-$database="your database name"; // if you have followed the readme file your database name will be "Finger_Attendance"
+$database="Finger_Attendance"; // if you have followed the readme file your database name will be "Finger_Attendance"
 
 $conn=mysqli_connect($hostname,$username,$password,$database);
 
